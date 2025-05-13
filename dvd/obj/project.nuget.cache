@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hE9GyOH5ReM=",
+  "success": true,
+  "projectFilePath": "C:\\Net\\dvd\\dvd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s2300829\\.nuget\\packages\\raylib-cs\\7.0.1\\raylib-cs.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
