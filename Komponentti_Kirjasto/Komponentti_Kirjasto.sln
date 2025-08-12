@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komponentti_Kirjasto", "Komponentti_Kirjasto.csproj", "{B4E4D6B3-8A23-4065-9E26-1E575F1A7FFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4E4D6B3-8A23-4065-9E26-1E575F1A7FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E4D6B3-8A23-4065-9E26-1E575F1A7FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E4D6B3-8A23-4065-9E26-1E575F1A7FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E4D6B3-8A23-4065-9E26-1E575F1A7FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E715B77-29F5-4F67-BFCC-E34D9F418683}
+	EndGlobalSection
+EndGlobal
