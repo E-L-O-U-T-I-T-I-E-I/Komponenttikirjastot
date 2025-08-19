@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\Komponenttikirjastot\\Pong\\Pong.csproj": {}
+    "C:\\GitHub\\Komponenttikirjastot\\Komponentti_Kirjasto\\Komponentti_Kirjasto.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\Komponenttikirjastot\\Pong\\Pong.csproj": {
+    "C:\\GitHub\\Komponenttikirjastot\\Komponentti_Kirjasto\\Komponentti_Kirjasto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\Komponenttikirjastot\\Pong\\Pong.csproj",
-        "projectName": "Pong",
-        "projectPath": "C:\\GitHub\\Komponenttikirjastot\\Pong\\Pong.csproj",
+        "projectUniqueName": "C:\\GitHub\\Komponenttikirjastot\\Komponentti_Kirjasto\\Komponentti_Kirjasto.csproj",
+        "projectName": "Komponentti_Kirjasto",
+        "projectPath": "C:\\GitHub\\Komponenttikirjastot\\Komponentti_Kirjasto\\Komponentti_Kirjasto.csproj",
         "packagesPath": "C:\\Users\\s2300829\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\Komponenttikirjastot\\Pong\\obj\\",
+        "outputPath": "C:\\GitHub\\Komponenttikirjastot\\Komponentti_Kirjasto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -44,17 +44,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Raylib-cs": {
-              "target": "Package",
-              "version": "[7.0.1, )"
-            }
-          },
+        "net9.0": {
+          "targetAlias": "net9.0",
           "imports": [
             "net461",
             "net462",
@@ -71,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
