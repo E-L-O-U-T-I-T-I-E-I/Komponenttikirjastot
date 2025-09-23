@@ -55,7 +55,7 @@ namespace Tanks
             
             while(Raylib.WindowShouldClose() == false)
             {
-
+                
                 
                 player1.Update(WallPos1, WallPos2, WallSize);
                 player2.Update(WallPos1, WallPos2, WallSize);
@@ -81,41 +81,40 @@ namespace Tanks
 
                 foreach (Rectangle Wall in Walls)
                 {
-                    for (int i = 0; i < Walls.Count; i++)
+                    //Osuvatko pallot toisiinsa tai tankkeihin
+                    foreach (Ball Ammukset in pallot)
                     {
-                        if (Raylib.CheckCollisionRecs(Walls[i], Ball2.rectangle())) { Ball2.Direction *= -1; } //pallo2
-                        if (Raylib.CheckCollisionRecs(Walls[i], Ball1.rectangle())) { Ball1.Direction *= -1; } //pallo1
-                    }
-                    break;
-                }
-
-                //Osuvatko pallot toisiinsa tai tankkeihin
-                foreach(Ball Ammukset in pallot)
-                {
-                    if (Raylib.CheckCollisionRecs(Ball1.rectangle(), Ball2.rectangle()))
-                    {
-                        Ball1.Position = player1.Position;
-                        Ball1.Direction = new Vector2(0, 0);
-                        Ball2.Position = player2.Position;
-                        Ball2.Direction = new Vector2(0, 0);
-                    }
-                    for (int i = 0; i < pallot.Count; i++)
-                    {
-
-                        if (Raylib.CheckCollisionRecs(Ball1.rectangle(), player2.rectangle()))
+                        if (Raylib.CheckCollisionRecs(Wall, Ammukset.rectangle()))
                         {
-                            Ball1.Position = player1.Position;
-                            Ball1.Direction = new Vector2(0, 0);
+                            Ammukset.Direction *= -1;
                         }
-                        if (Raylib.CheckCollisionRecs(Ball2.rectangle(), player1.rectangle()))
-                        {
-                            Ball2.Position = player2.Position;
-                            Ball2.Direction = new Vector2(0, 0);
-                            
-                        }
+
                     }
                     
-                    break;
+                }
+                
+                //Osuuko pallot pelaajiin tai toisiinsa.
+                if (Raylib.CheckCollisionRecs(Ball1.rectangle(), Ball2.rectangle()))
+                {
+                    MoveBallOut(Ball1);
+                    MoveBallOut(Ball2);
+                    //Pallot osuivat toisiinsa
+                }
+                if (Raylib.CheckCollisionRecs(Ball1.rectangle(), player2.rectangle()))
+                {
+                    MoveBallOut(Ball1);
+                    //Pallo osui pelaajaan 2
+                }
+                if (Raylib.CheckCollisionRecs(Ball2.rectangle(), player1.rectangle()))
+                {
+                    MoveBallOut(Ball2);
+                    //Pallo osui pelaajaan 1
+                }
+
+                if (Raylib.CheckCollisionRecs(player1.rectangle(), player2.rectangle()))
+                {
+                    player1.Position -= player1.Direction;
+                    player2.Position -= player2.Direction;
                 }
 
                 player1.DrawTank();
@@ -137,6 +136,10 @@ namespace Tanks
 
         }
 
-        
+        public static void MoveBallOut(Ball pallo)
+        {
+            pallo.Position.X = -1000;
+            pallo.Direction = Vector2.Zero;
+        }
     }
 }
