@@ -13,7 +13,7 @@ namespace ARTILLERY
 
         public Vector2 Position;
         public Vector2 Direction;
-        public Vector2 size = new Vector2(25, 50);
+        public static Vector2 size = new Vector2(25, 50);
         public float angle = 0.0f;
         //liikutus napit
         public KeyboardKey Left;

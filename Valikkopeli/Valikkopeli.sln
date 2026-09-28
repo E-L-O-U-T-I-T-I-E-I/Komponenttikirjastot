@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valikkopeli", "Valikkopeli.csproj", "{125087E2-E7DE-46C6-ABDF-1E6760D3CBF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayGuiCreator", "..\..\..\Tiedostot\RayGuiCreator\RayGuiCreator\RayGuiCreator.csproj", "{D3F16D46-9F07-FA43-16B1-A557DF4BE4E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125087E2-E7DE-46C6-ABDF-1E6760D3CBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125087E2-E7DE-46C6-ABDF-1E6760D3CBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125087E2-E7DE-46C6-ABDF-1E6760D3CBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125087E2-E7DE-46C6-ABDF-1E6760D3CBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F16D46-9F07-FA43-16B1-A557DF4BE4E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F16D46-9F07-FA43-16B1-A557DF4BE4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F16D46-9F07-FA43-16B1-A557DF4BE4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F16D46-9F07-FA43-16B1-A557DF4BE4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F4392CD-718F-432A-ABA6-36B0836804C4}
+	EndGlobalSection
+EndGlobal
